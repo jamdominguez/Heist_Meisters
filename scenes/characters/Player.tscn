@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://resources/GFX/PNG/Hitman 1/hitman1_stand.png" type="Texture" id=1]
 [ext_resource path="res://scenes/characters/TemplateCharacter.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scripts/characters/Player.gd" type="Script" id=3]
-[ext_resource path="res://resources/Lightmaps/torchmap.png" type="Texture" id=4]
 [ext_resource path="res://scenes/Touch.tscn" type="PackedScene" id=5]
 
 [node name="Player" instance=ExtResource( 2 )]
@@ -14,5 +13,3 @@ texture = ExtResource( 1 )
 
 [node name="Torch" parent="." index="2" instance=ExtResource( 5 )]
 position = Vector2( 17.6027, 0.162827 )
-texture = ExtResource( 4 )
-offset = Vector2( 315, 0 )
