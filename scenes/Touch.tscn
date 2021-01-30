@@ -1,0 +1,5 @@
+[gd_scene format=2]
+
+[node name="Touch" type="Light2D"]
+shadow_enabled = true
+shadow_color = Color( 0.054902, 0.0509804, 0.0509804, 0 )

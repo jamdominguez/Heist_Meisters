@@ -2,7 +2,7 @@ extends "res://scripts/characters/TemplateCharacter.gd"
 
 var motion = Vector2()
 
-func _physics_process(delta):
+func _physics_process(delta):	
 	update_movement()
 	move_and_slide(motion)
 
@@ -30,3 +30,8 @@ func update_movement():
 	else:
 		#motion.x = 0
 		motion.x = lerp(motion.x, 0, FRICTION)
+
+func _input(event):	
+	if Input.is_action_just_pressed("torch_toggle"):
+		print("torch_toggle event...")
+		$Torch.enabled = !$Torch.enabled
